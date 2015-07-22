@@ -22,6 +22,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		670986751B6015F200E5EF23 /* FadeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 670986721B6015F200E5EF23 /* FadeTransition.m */; };
+		670986761B6015F200E5EF23 /* ShrinkTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 670986741B6015F200E5EF23 /* ShrinkTransition.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		0CA29011A65272C9D79637AB /* Pods-EBViewControllerSwitcher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EBViewControllerSwitcher_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EBViewControllerSwitcher_Tests/Pods-EBViewControllerSwitcher_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		15F4287CB6E88131AB0F15D6 /* Pods_EBViewControllerSwitcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EBViewControllerSwitcher_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* EBViewControllerSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EBViewControllerSwitcher.app; path = EBViewControllerSwitcher_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* EBViewControllerSwitcher_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EBViewControllerSwitcher_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -51,12 +53,16 @@
 		6003F5A5195388D20070C39A /* EBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EBViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* EBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EBViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = EBViewControllerSwitcher_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* EBViewControllerSwitcher_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EBViewControllerSwitcher_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		670986711B6015F200E5EF23 /* FadeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeTransition.h; sourceTree = "<group>"; };
+		670986721B6015F200E5EF23 /* FadeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeTransition.m; sourceTree = "<group>"; };
+		670986731B6015F200E5EF23 /* ShrinkTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkTransition.h; sourceTree = "<group>"; };
+		670986741B6015F200E5EF23 /* ShrinkTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkTransition.m; sourceTree = "<group>"; };
 		8312B2B85251CB174354D4F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		90A122CA72AB40F5A91DD49A /* Pods-EBViewControllerSwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EBViewControllerSwitcher_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EBViewControllerSwitcher_Example/Pods-EBViewControllerSwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,8 +114,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* EBViewControllerSwitcher.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* EBViewControllerSwitcher_Example.app */,
+				6003F5AE195388D20070C39A /* EBViewControllerSwitcher_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* EBViewController.h */,
 				6003F5A6195388D20070C39A /* EBViewController.m */,
+				670986701B6015F200E5EF23 /* CustomTransitions */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -182,6 +189,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		670986701B6015F200E5EF23 /* CustomTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				670986711B6015F200E5EF23 /* FadeTransition.h */,
+				670986721B6015F200E5EF23 /* FadeTransition.m */,
+				670986731B6015F200E5EF23 /* ShrinkTransition.h */,
+				670986741B6015F200E5EF23 /* ShrinkTransition.m */,
+			);
+			path = CustomTransitions;
+			sourceTree = "<group>";
+		};
 		95A4FC521B0BDDA08060D073 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +231,7 @@
 			);
 			name = EBViewControllerSwitcher_Example;
 			productName = EBViewControllerSwitcher;
-			productReference = 6003F58A195388D20070C39A /* EBViewControllerSwitcher.app */;
+			productReference = 6003F58A195388D20070C39A /* EBViewControllerSwitcher_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* EBViewControllerSwitcher_Tests */ = {
@@ -234,7 +252,7 @@
 			);
 			name = EBViewControllerSwitcher_Tests;
 			productName = EBViewControllerSwitcherTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* EBViewControllerSwitcher_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -390,8 +408,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670986761B6015F200E5EF23 /* ShrinkTransition.m in Sources */,
 				6003F59E195388D20070C39A /* EBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* EBViewController.m in Sources */,
+				670986751B6015F200E5EF23 /* FadeTransition.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

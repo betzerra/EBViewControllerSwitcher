@@ -8,22 +8,54 @@
 
 #import "EBViewController.h"
 
+//  Pods
+@import EBViewControllerSwitcher;
+
+//  Custom Transitions
+#import "FadeTransition.h"
+#import "ShrinkTransition.h"
+
 @interface EBViewController ()
 
 @end
 
 @implementation EBViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+#pragma mark - Public
+
+- (IBAction)newViewControllerNoAnimationButtonPressed:(id)sender {
+  UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"viewController1"];
+  [self.eb_controllerSwitcher setViewController:vc animator:nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)newViewControllerFadeAnimationButtonPressed:(id)sender {
+  FadeTransition *animator = [[FadeTransition alloc] init];
+  
+  UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"viewController1"];
+  [self.eb_controllerSwitcher setViewController:vc animator:animator];
+}
+
+- (IBAction)newViewControllerFancyAnimationButtonPressed:(id)sender {
+  ShrinkTransition *animator = [[ShrinkTransition alloc] init];
+  
+  UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"viewController1"];
+  [self.eb_controllerSwitcher setViewController:vc animator:animator];
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  
+  NSArray *colors = @[
+                      [UIColor redColor],
+                      [UIColor blueColor],
+                      [UIColor greenColor],
+                      [UIColor brownColor],
+                      [UIColor blackColor],
+                      [UIColor darkGrayColor]
+                      ];
+  NSInteger randomColorIndex = arc4random() % [colors count];
+  
+  self.view.backgroundColor = colors[randomColorIndex];
 }
 
 @end

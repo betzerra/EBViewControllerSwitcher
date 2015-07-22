@@ -1,0 +1,14 @@
+PODS:
+  - EBViewControllerSwitcher (0.1.0)
+
+DEPENDENCIES:
+  - EBViewControllerSwitcher (from `../`)
+
+EXTERNAL SOURCES:
+  EBViewControllerSwitcher:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EBViewControllerSwitcher: 33c225716761e3b4fa83b04fc5448a632cf1de7e
+
+COCOAPODS: 0.38.0

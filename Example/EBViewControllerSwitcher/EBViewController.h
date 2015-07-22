@@ -10,4 +10,8 @@
 
 @interface EBViewController : UIViewController
 
+- (IBAction)newViewControllerNoAnimationButtonPressed:(id)sender;
+- (IBAction)newViewControllerFadeAnimationButtonPressed:(id)sender;
+- (IBAction)newViewControllerFancyAnimationButtonPressed:(id)sender;
+
 @end

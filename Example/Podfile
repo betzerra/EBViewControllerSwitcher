@@ -8,5 +8,4 @@ end
 target 'EBViewControllerSwitcher_Tests', :exclusive => true do
   pod "EBViewControllerSwitcher", :path => "../"
 
-  
 end
