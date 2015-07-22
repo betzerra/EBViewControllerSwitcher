@@ -1,28 +1,16 @@
-#
-# Be sure to run `pod lib lint EBViewControllerSwitcher.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "EBViewControllerSwitcher"
   s.version          = "0.1.0"
-  s.summary          = "A short description of EBViewControllerSwitcher."
+  s.summary          = "ViewController that allows replace its child with custom transitions"
   s.description      = <<-DESC
-                       An optional longer description of EBViewControllerSwitcher
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Sometimes you need to transition between viewControllers without pushing or presenting a modal.
+You just need to dissapear the whole screen and replace it with another one. I don't always need to do that, but when I do, I use EBViewControllerSwitcher :-) 
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/EBViewControllerSwitcher"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/betzerra/EBViewControllerSwitcher"
   s.license          = 'MIT'
   s.author           = { "Ezequiel Becerra" => "ezequiel.becerra@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/EBViewControllerSwitcher.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/betzerra/EBViewControllerSwitcher.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/betzerra'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -32,7 +20,4 @@ Pod::Spec.new do |s|
     'EBViewControllerSwitcher' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
