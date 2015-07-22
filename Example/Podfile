@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'EBViewControllerSwitcher_Example', :exclusive => true do
+  pod "EBViewControllerSwitcher", :path => "../"
+end
+
+target 'EBViewControllerSwitcher_Tests', :exclusive => true do
+  pod "EBViewControllerSwitcher", :path => "../"
+
+  
+end
